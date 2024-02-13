@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    background-color: rgba(50, 52, 50, 0.668); /* 투명도를 설정할 수 있는 RGBA 값 사용 */
+    padding: 20px; /* 내용과의 간격을 조절할 수 있습니다. */
+    min-height: 100vh; /*보는 화면의 길이*/
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.task-area{
+    border:1px solid lightgray;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom:1px solid lightgray;
+   position: relative;
+}
+
+.task-tabs div{
+    padding: 1em;
+}
+
+#under-line{
+    height: 2px;
+    background-color: lightgreen;
+    position: absolute; /*코딩누나 유튜브 참고*/
+    width:65px;
+    left:0px;
+    top:50px;
+    padding:0px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
