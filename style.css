@@ -1,4 +1,13 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
+    font-family: 'Cafe24Oneprettynight';
     margin:0;
     background-image: url("images/back.jpg");
     background-repeat: no-repeat;
@@ -6,7 +15,8 @@ body{
 }
 
 .container{
-    background-color: rgba(211, 158, 171, 0.668); /* 투명도를 설정할 수 있는 RGBA 값 사용 */
+    font-family: 'Cafe24Oneprettynight';
+    background-color: rgba(243, 218, 225, 0.668); /* 투명도를 설정할 수 있는 RGBA 값 사용 */
     padding: 20px; /* 내용과의 간격을 조절할 수 있습니다. */
     min-height: 100vh; /*보는 화면의 길이*/
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
