@@ -15,13 +15,31 @@ let tabs = document.querySelectorAll(".task-tabs div");
 let taskList=[];
 let mode='all'; //글로벌, 전역변수
 let filterList = [];
+let underLine = document.getElementById("under-line");
+
 addButton.addEventListener("click" ,addTask) //이벤트, 기능
 
-for(let i=1; i<tabs.length;i++){
-    tabs[i].addEventListener("click",function(event){
-        filter(event)})
+
+for(let i=0; i<tabs.length;i++){
+    tabs[i].addEventListener("click", function(event){
+        // 언더바 이동
+        moveUnderLine(event.target);
+        filter(event);
+    });
+}
+
+// 언더바 이동 함수
+function moveUnderLine(targetTab) {
+    // 현재 선택된 탭의 위치 및 너비 계산
+    let targetWidth = targetTab.offsetWidth;
+    let targetOffsetLeft = targetTab.offsetLeft;
+
+    // 언더바 이동
+    underLine.style.width = targetWidth + "px";
+    underLine.style.transform = `translateX(${targetOffsetLeft}px)`;
 }
 console.log(tabs);
+
 
 function addTask() {
     let task = {
@@ -124,7 +142,10 @@ function filter(event){
     }
 }
 
+
+
 function randomIDGenerate(){
     return '_'+ Math.random().toString(36).substr(2, 9); //randomID값 받기 = 데이터 값에 ID값 받기
 }
 // 정보들에는 아이디 값이 필요하다는 것을 알아야함!
+

@@ -23,13 +23,14 @@ body{
 }
 
 .task-area{
-    border:1px solid rgb(247, 242, 247);
+    border:1px solid rgb(189, 159, 189);
+    border-radius: 5px;
 }
 
 .task-tabs{
     display: flex;
-    border-bottom:1px solid lightgray;
-   position: relative;
+    border-bottom:1px solid  rgb(189, 159, 189);
+    position: relative;
 }
 
 .task-tabs div{
@@ -37,19 +38,29 @@ body{
 }
 
 #under-line{
-    height: 2px;
-    background-color: rgb(233, 101, 123);
+    height: 3px;
+    background-color:  rgb(189, 159, 189);
     position: absolute; /*코딩누나 유튜브 참고*/
     width:65px;
     left:0px;
     top:50px;
     padding:0px;
+    transition: 0.5s;
 }
 
 .task{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    margin : 3px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.task:hover {
+    background-color: rgb(152, 101, 152); /* 호버 시 배경색 변경 */
 }
 
 .task-done{
