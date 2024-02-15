@@ -14,3 +14,7 @@
 - HTML
 - CSS
 - JavaScript
+
+
+### Nelify 배포
+https://cozy-phoenix-d05856.netlify.app/
