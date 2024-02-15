@@ -56,3 +56,7 @@ body{
     text-decoration: line-through; 
     /*line-through는 텍스트에 밑줄을 그어줌*/
 }
+
+.task-tabs div{
+    cursor:pointer;
+}
