@@ -6,6 +6,7 @@
 }
 
 
+
 body{
     font-family: 'Cafe24Oneprettynight';
     margin:0;
@@ -70,4 +71,54 @@ body{
 
 .task-tabs div{
     cursor:pointer;
+}
+
+.btn{
+    background-color: pink;
+    text-decoration-color : white;
+}
+
+.input-area input[type="text"] {
+    width: 300px; 
+}
+
+.task {
+    opacity: 0; /* 초기에는 투명도를 0으로 설정하여 숨깁니다. */
+    transition: opacity 0.3s ease; /* opacity 속성에 트랜지션 효과를 부여합니다. */
+}
+
+.task.active {
+    opacity: 1; /* 활성화되면 투명도를 1로 설정하여 나타나게 합니다. */
+}
+
+.task.completed {
+    background-color: rgb(74, 39, 74, 0.8);
+    color: white;
+}
+
+#cherryBlossoms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* 이 요소를 마우스 이벤트의 대상에서 제외합니다. */
+}
+
+.completed-button {
+    background-color: #e67eb2; /* 연분홍색 */
+    color: white; /* 흰색 */
+    border: none; /* 테두리 없음 */
+    padding: 8px 16px; /* 패딩 설정 */
+    border-radius: 5px; /* 둥근 테두리 */
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transition: background-color 0.3s ease;
+}
+
+.regular-button {
+    background-color: #602622; /* 빨간색 */
+    color: white; /* 흰색 */
+    border: none; /* 테두리 없음 */
+    padding: 8px 16px; /* 패딩 설정 */
+    border-radius: 5px; /* 둥근 테두리 */
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+    transition: background-color 0.3s ease;
 }
